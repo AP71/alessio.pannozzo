@@ -1,11 +1,8 @@
 import React from 'react';
-import Avatar from "./components/Avatar";
 import Banner from "./components/Banner";
 import {ArrowDownIcon} from "@heroicons/react/20/solid";
-import logo from "./images/defaultPng.png";
-import logo2 from "./images/extendedPng.png";
 import TopBar from "./components/TopBar";
-import Carousel from "./components/Carousel";
+import Skills from "./components/Skills";
 import Info from "./components/Info";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
@@ -29,7 +26,7 @@ const HomePage = () => {
                         <Info />
                     </div>
                     <div id={"skills"} className="min-h-screen flex items-center justify-center flex-col py-28">
-                        <Carousel/>
+                        <Skills />
                     </div>
                     <div id={"projects"} className="min-h-screen flex items-center justify-center flex-col py-28 ">
                         <Projects />

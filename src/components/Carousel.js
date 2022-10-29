@@ -1,10 +1,24 @@
 import React from 'react';
 
-const Carousel = () => {
-    return (
-            <div className={"items-center justify-center p-20 w-4/5 min-h-screen rounded-xl bg-primary drop-shadow-4xl shadow-secondary"}>
+const Carousel = ({titolo, array}) => {
 
+    return (
+        <div>
+            <div className={"flex items-center justify-center"}>
+                <div>{titolo}</div>
             </div>
+            <div className={"flex items-center justify-center pt-28"}>
+                <div className={"slider items-center justify-center"}>
+                    {
+                        array.map((file) => (
+                            <span className={"element flex justify-center items-center"} style={{'--i': file.i, '--l':((360/array.length)+`deg`), '--p':'130px'}}>
+                                        <img className={"image"} src={file.nome} alt="Java"/>
+                                    </span>
+                        ))
+                    }
+                </div>
+            </div>
+        </div>
     );
 };
 

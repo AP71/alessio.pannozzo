@@ -6,4 +6,51 @@ html {
     scroll-behavior: smooth;
 }
 
+.slider{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    animation: rotate 45s linear infinite;
+}
+
+@keyframes  rotate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.element{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    background: #2c2c2c;
+    border-radius: 20px;
+    transform: rotateY(calc(var(--i)*var(--l))) translateZ(120px);
+    }
+
+.image{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    transition: 2s;
+}
+
+@media only screen and (min-width: 640px) {
+    .element{
+        transform: rotateY(calc(var(--i)*var(--l))) translateZ(400px);
+    }
+};
+
+
+
 
