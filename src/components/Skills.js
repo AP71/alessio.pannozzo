@@ -12,12 +12,14 @@ import logoLr from "../images/adobe-lightroom.png";
 import logoDavinci from "../images/davinci.png";
 import logoCura from "../images/cura.png";
 import logoGitHub from "../images/github.png";
+import logoMysql from "../images/mysql.png";
+import logoPostgres from "../images/postgresql.png";
 import Carousel from "./Carousel";
 
 
 const Skills = () => {
 
-    const languages_and_skills = [
+    const languages = [
         {
             nome: logoJava,
             i: 1
@@ -41,14 +43,25 @@ const Skills = () => {
         {
             nome: logoCSS,
             i: 6
-        },
+        }
+    ];
+
+    const framework_and_db = [
         {
             nome: logoReact,
-            i: 7
+            i: 1
         },
         {
             nome: logoTailwind,
-            i: 8
+            i: 2
+        },
+        {
+            nome: logoMysql,
+            i: 3
+        },
+        {
+            nome: logoPostgres,
+            i: 4
         }
     ];
 
@@ -79,11 +92,10 @@ const Skills = () => {
     return (
             <div className={"w-4/5 min-h-screen rounded-xl flex justify-center items-center bg-primary drop-shadow-4xl shadow-secondary "}>
                 <div className={"flex-col items-center justify-center space-y-20"}>
-                    <Carousel titolo={"Languages and Frameworks"} array={languages_and_skills}/>
+                    <Carousel titolo={"Languages"} array={languages}/>
+                    <Carousel titolo={"Frameworks and DB"} array={framework_and_db}/>
                     <Carousel titolo={"Other skills"} array={other}/>
                 </div>
-
-
             </div>
     );
 };

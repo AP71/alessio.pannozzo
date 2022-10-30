@@ -5,9 +5,9 @@ const Carousel = ({titolo, array}) => {
     return (
         <div>
             <div className={"flex items-center justify-center text-center"}>
-                <div>{titolo}</div>
+                <div className={"md:text-4xl text-2xl"}>{titolo}</div>
             </div>
-            <div className={"flex items-center justify-center pt-28"}>
+            <div className={"flex items-center justify-center pt-24 md:py-28"}>
                 <div className={"slider items-center justify-center"}>
                     {
                         array.map((file) => (
