@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
 import logo from "../images/defaultPng.png";
-import logo2 from "../images/extendedPng.png";
 
 const TopBar = () => {
 

@@ -90,7 +90,7 @@ const Skills = () => {
 
 
     return (
-            <div className={"w-4/5 min-h-screen rounded-xl flex justify-center items-center bg-primary drop-shadow-4xl shadow-secondary "}>
+            <div className={"w-4/5 min-h-screen rounded-xl flex justify-center items-center bg-gradient-to-br from-gray-700 via-primary to-gray-700 drop-shadow-4xl shadow-secondary "}>
                 <div className={"flex-col items-center justify-center space-y-20"}>
                     <Carousel titolo={"Languages"} array={languages}/>
                     <Carousel titolo={"Frameworks and DB"} array={framework_and_db}/>
