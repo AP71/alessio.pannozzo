@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from "./components/Banner";
-import {ArrowDownIcon} from "@heroicons/react/20/solid";
+import {ArrowDownIcon, ArrowUpIcon} from "@heroicons/react/20/solid";
 import TopBar from "./components/TopBar";
 import Skills from "./components/Skills";
 import Info from "./components/Info";
@@ -9,14 +9,39 @@ import Contact from "./components/Contact";
 import {TypeAnimation} from "react-type-animation";
 
 const HomePage = () => {
+
     return (
         <div className={"flex-col items-center justify-center"}>
+            <div id={"home"}/>
             <TopBar/>
+            <a href={"#home"} className={"fixed right-2 bottom-8 flex ml-3 items-center px-4 justify-center text-white border-2 border-secondary rounded-full p-2 "}>
+                <ArrowUpIcon className={"h-6 text-secondary "}/>
+                <div className={"hidden md:inline"}>
+                    Home
+                </div>
+            </a>
             <div className={"bg-gradient-to-br from-primary via-gray-700 to-primary"}>
-                <div id={"general"} className="min-h-screen flex items-center justify-center md:justify-center flex-col pb-24">
+                <div id={"general"} className="min-h-screen flex items-center justify-center flex-col pb-24">
                     <div className={"flex items-center justify-items-start py-40"}>
                         <TypeAnimation className={"flex text-secondary text-2xl md:text-9xl font-bold pb-28"}
-                                       sequence={["Hi", 500, "Hi,", 500, "Hi, I'm", 500, "Hi, I'm Alessio", 500, "Hi, I'm Alessio.", 500, "Hi, I'm Alessio..", 500, "Hi, I'm Alessio...", 500,]}
+                                       sequence={[  "Hi", 500,
+                                                    "Hi,", 500,
+                                                    "Hi, I'm", 500,
+                                                    "Hi, I'm Alessio", 500,
+                                                    "Hi, I'm Alessio.", 500,
+                                                    "Hi, I'm Alessio..", 500,
+                                                    "Hi, I'm Alessio...", 500,
+                                                   "Hi, I'm", 500,
+                                                   "Hi, I'm a ", 500,
+                                                   "Hi, I'm a student", 500,
+                                                   "Hi, I'm a student.", 500,
+                                                   "Hi, I'm a student..", 500,
+                                                    "Hi, I'm a student...", 500,
+                                                   "Hi, I'm", 500,
+                                                   "Hi, I'm a ", 500,
+                                                   "Hi, I'm a developer", 500,
+                                                   "Hi, I'm a developer.", 500,
+                                                   "Hi, I'm a developer...", 500]}
                                        wrapper="div"
                                        cursor={true}
                                        repeat={Infinity}
@@ -43,7 +68,7 @@ const HomePage = () => {
                         <Contact />
                     </div>
                     <div id={"credits"} className="h-8 flex flex-col bg-primary text-white text-lg">
-                        Ciao
+                        © Alessio Pannozzo 2022
                     </div>
                 </div>
 

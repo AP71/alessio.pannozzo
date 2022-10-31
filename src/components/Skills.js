@@ -14,6 +14,9 @@ import logoCura from "../images/cura.png";
 import logoGitHub from "../images/github.png";
 import logoMysql from "../images/mysql.png";
 import logoPostgres from "../images/postgresql.png";
+import logoLinux from "../images/linux.png";
+import logoGo from "../images/go.png";
+import logoGit from "../images/git.png";
 import Carousel from "./Carousel";
 
 
@@ -43,6 +46,10 @@ const Skills = () => {
         {
             nome: logoCSS,
             i: 6
+        },
+        {
+            nome: logoGo,
+            i: 7
         }
     ];
 
@@ -85,7 +92,16 @@ const Skills = () => {
         {
             nome: logoGitHub,
             i: 5
-        }
+        },
+        {
+            nome: logoGit,
+            i: 6
+        },
+        {
+            nome: logoLinux,
+            i: 7
+        },
+
     ];
 
 
