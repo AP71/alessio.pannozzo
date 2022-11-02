@@ -22,7 +22,7 @@ const Banner = () => {
     ]
 
     return (
-        <div className={"px-10 flex flex-col items-center md:flex-row justify-center items-center space-y-10 md:space-y-0 md:space-x-10 m-16 w-full md:px-32"}>
+        <div className={"px-10 flex flex-col items-center md:flex-row justify-center space-y-10 md:space-y-0 md:space-x-10 m-16 w-full md:px-32"}>
             {
                 buttons.map((pulsante,i) => (
                     <a key={i} href={pulsante.link} className={"bg-secondary flex-1 w-full text-center rounded-full text-xl md:text-3xl px-4 py-4 hover:animate-bounce font-semibold"}>

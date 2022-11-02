@@ -4,7 +4,6 @@ import {ArrowDownIcon, ArrowUpIcon} from "@heroicons/react/20/solid";
 import TopBar from "./components/TopBar";
 import Skills from "./components/Skills";
 import Info from "./components/Info";
-import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import {TypeAnimation} from "react-type-animation";
 
@@ -23,7 +22,7 @@ const HomePage = () => {
             <div className={"bg-gradient-to-br from-primary via-gray-700 to-primary"}>
                 <div id={"general"} className="min-h-screen flex items-center justify-center flex-col pb-24">
                     <div className={"flex items-center justify-items-start py-40"}>
-                        <TypeAnimation className={"flex text-secondary text-2xl md:text-9xl font-bold pb-28"}
+                        <TypeAnimation className={"animation flex"}
                                        sequence={[  "Hi", 500,
                                                     "Hi,", 500,
                                                     "Hi, I'm", 500,
@@ -31,17 +30,18 @@ const HomePage = () => {
                                                     "Hi, I'm Alessio.", 500,
                                                     "Hi, I'm Alessio..", 500,
                                                     "Hi, I'm Alessio...", 500,
-                                                   "Hi, I'm", 500,
-                                                   "Hi, I'm a ", 500,
-                                                   "Hi, I'm a student", 500,
-                                                   "Hi, I'm a student.", 500,
-                                                   "Hi, I'm a student..", 500,
+                                                    "Hi, I'm", 500,
+                                                    "Hi, I'm a ", 500,
+                                                    "Hi, I'm a student", 500,
+                                                    "Hi, I'm a student.", 500,
+                                                    "Hi, I'm a student..", 500,
                                                     "Hi, I'm a student...", 500,
-                                                   "Hi, I'm", 500,
-                                                   "Hi, I'm a ", 500,
-                                                   "Hi, I'm a developer", 500,
-                                                   "Hi, I'm a developer.", 500,
-                                                   "Hi, I'm a developer...", 500]}
+                                                    "Hi, I'm", 500,
+                                                    "Hi, I'm a ", 500,
+                                                    "Hi, I'm a developer", 500,
+                                                    "Hi, I'm a developer.", 500,
+                                                    "Hi, I'm a developer..", 500,
+                                                    "Hi, I'm a developer...", 500]}
                                        wrapper="div"
                                        cursor={true}
                                        repeat={Infinity}
@@ -54,17 +54,14 @@ const HomePage = () => {
                         Read More
                     </a>
                 </div>
-                <div className={"text-secondary font-semibold text-3xl"}>
+                <div className={"text-secondary font-semi-bold text-3xl"}>
                     <div id={"info"} className="min-h-screen flex items-center justify-center flex-col py-28">
                         <Info />
                     </div>
                     <div id={"skills"} className="min-h-screen flex items-center justify-center flex-col py-28">
                         <Skills />
                     </div>
-                    <div id={"projects"} className="min-h-screen flex items-center justify-center flex-col py-28 ">
-                        <Projects />
-                    </div>
-                    <div id={"contact"} className="min-h-screen flex items-center justify-center flex-col py-28">
+                    <div id={"contact"} className="h-fit flex items-center justify-center flex-col py-28">
                         <Contact />
                     </div>
                     <div id={"credits"} className="h-8 flex flex-col bg-primary text-white text-lg">
