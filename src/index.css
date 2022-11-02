@@ -1,9 +1,15 @@
+@import url('https://fonts.google.com/specimen/Caveat');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Caveat', cursive;
 }
 
 .slider{
@@ -45,16 +51,54 @@ html {
     transition: 2s;
 }
 
+.animation {
+    color: #89A6FB;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 7rem;
+}
+
+.contact {
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+.contatto {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 2.5rem 6rem;
+}
+
 @media only screen and (max-width: 600px) {
     .element{
         transform: rotateY(calc(var(--i)*var(--l))) translateZ(120px);
     }
-}
-
-@media only screen and (min-width: 1200px) {
-    .element{
-        transform: rotateY(calc(var(--i)*var(--l))) translateZ(500px);
+    .animation{
+        font-size: 2.2rem;
+    }
+    .contact{
+        flex-direction: column;
     }
 }
 
+
+@media only screen and (min-width: 768px) {
+    .element{
+        transform: rotateY(calc(var(--i)*var(--l))) translateZ(250px);
+    }
+    .animation{
+        font-size: 4.5rem;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .element{
+        transform: rotateY(calc(var(--i)*var(--l))) translateZ(500px);
+    }
+    .animation{
+        font-size: 7rem;
+    }
+}
 
