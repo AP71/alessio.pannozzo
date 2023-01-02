@@ -17,6 +17,10 @@ import logoPostgres from "../images/postgresql.png";
 import logoLinux from "../images/linux.png";
 import logoGo from "../images/go.png";
 import logoGit from "../images/git.png";
+import logoDocker from "../images/docker.png";
+import logoVue from "../images/vue.png";
+import logoBootstrap from "../images/bootstrap.png";
+
 import Carousel from "./Carousel";
 
 
@@ -63,12 +67,20 @@ const Skills = () => {
             i: 2
         },
         {
-            nome: logoMysql,
+            nome: logoVue,
             i: 3
         },
         {
-            nome: logoPostgres,
+            nome: logoBootstrap,
             i: 4
+        },
+        {
+            nome: logoMysql,
+            i: 5
+        },
+        {
+            nome: logoPostgres,
+            i: 6
         }
     ];
 
@@ -101,7 +113,10 @@ const Skills = () => {
             nome: logoLinux,
             i: 7
         },
-
+        {
+            nome: logoDocker,
+            i: 8
+        },
     ];
 
 
